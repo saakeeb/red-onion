@@ -1,0 +1,49 @@
+.item{
+    list-style: none;
+    margin-right: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+.item li{
+    display: inline-block;
+}
+.item li{
+    display: block;
+    text-decoration: none;
+    margin: 5px 20px;
+    color: black;
+    cursor: pointer;
+}
+.item li:hover{
+    color: #C82333;
+}
+
+.item li:active{
+    color: #ff0019;
+}
+.item-display{
+    display: flex;
+   flex-direction: row;
+   align-items: center;
+   width: auto;
+}
+.text-danger{
+    padding-right: 30px;
+}
+.check-out{
+    margin-top: 2em;
+}
+.food-area .nav-item{
+    color: black;
+    cursor: pointer;
+    font-weight: 600;
+}
+.food-area .nav-item:hover{
+    color: #C82333;
+}
+.food-area .active{
+    color: #C82333;
+    border-bottom: 2px solid  #C82333;
+}
+
+
+

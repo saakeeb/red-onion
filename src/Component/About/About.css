@@ -1,0 +1,28 @@
+.about-text{
+    text-align: left;
+    margin-top: 4em;
+    margin-left: 20px;
+}
+.about-text h3{
+    margin-bottom: 15px;
+}
+.about-text p{
+    margin: 0;
+    padding: 0;
+}
+.row{
+    margin-top: 4.5em;
+}
+.about-1{
+    height: 350px;
+}
+.about-2{
+    height: 400px;
+}
+.about-card-style{
+    text-align: left;
+}
+.about-card{
+    margin:0;
+    padding: 0;
+}
