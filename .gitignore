@@ -12,7 +12,7 @@
 /build
 
 #protection
-../src/FirebaseConfig.js
+/src/Firebase.Config.js
 
 # misc
 .DS_Store
