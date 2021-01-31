@@ -63,11 +63,10 @@ function App() {
             <Banner />
             <Menu cart={cart} handleAddProduct={handleAddProduct} />
             <About></About>
-            <Footer></Footer>
           </Route>
           <Route exact path="/">
             <Banner />
-            <Menu />
+            <Menu cart={cart} handleAddProduct={handleAddProduct} />
             <About></About>
 
           </Route>
