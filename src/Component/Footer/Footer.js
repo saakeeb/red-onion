@@ -10,30 +10,33 @@ const Footer = () => {
                     <img src={logo} alt="" />
                 </div>
                 <div className="col-md-3 pb-sm-5">
-                    <p><small>About online food</small></p>
-                    <p><small>Read our blog</small></p>
-                    <p><small>Sign up to deliver</small></p>
-                    <p><small>Add your restaurant</small></p>
+                    <a href="#">About online food</a><br/>
+                    <a href="#">Read our blog</a><br/>
+                    <a href="#">Sign up to deliver</a><br/>
+                    <a href="#">Add your restaurant</a>
                 </div>
                 <div className="col-md-3">
-                    <p><small>Get help</small></p>
-                    <p><small>Read FAQs</small></p>
-                    <p><small>View all cities</small></p>
-                    <p><small>Restaurants near me</small></p>
+                    <a href="#">Get help</a>
+                    <br/>
+                    <a href="#">Read FAQs</a>
+                    <br/>
+                    <a href="#">View all cities</a>
+                    <br/>
+                    <a href="#">small Restaurants near me</a>
                 </div>
             </div>
-            <div className="row pb-sm-3">
+            <div className="row pb-sm-5 pl-sm-3">
                 <div className="col-md-6 pl-5">
                     <p><small>Copyright @ 2021 online food</small></p>
                 </div>
                 <div className="col-md-2 px-5">
-                    <p><small>Privacy policy</small></p>
+                    <a href="#"><small>Privacy policy</small></a>
                 </div>
                 <div className="col-md-2 px-5">
-                    <p><small>Terms of use</small></p>
+                <a href="#"><small>Terms of use</small></a>
                 </div>
                 <div className="col-md-2 px-5">
-                    <p><small>Pricing</small></p>
+                <a href="#"><small>Pricing</small></a>
                 </div>
             </div>
 

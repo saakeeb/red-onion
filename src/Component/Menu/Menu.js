@@ -1,23 +1,18 @@
-import React, { useEffect, useState } from 'react';
+import React, {  useState } from 'react';
 import foodFakeData from '../../Resources/foodFakeData';
 import './Menu.css';
 import FoodItem from '../FoodItem/FoodItem';
-import Cart from '../Cart/Cart';
+import { Link } from 'react-router-dom';
 
-const Menu = () => {
-    const [cart, setCart] = useState([]);
+const Menu = (props) => {
+    const handleAddProduct = props.handleAddProduct;
 
     const [foods, setFoods] = useState(foodFakeData);
     const [selectedFoodType, setSelectedFoodType] = useState("lunch");
 
     const selectedCategory = foods.filter(food => food.catagories === selectedFoodType)
-    console.log('filter', selectedCategory);
 
-    const handleAddProduct = product => {
-        console.log('food item added', product);
-        const newCart = [...cart, product];
-        setCart(newCart);
-    }
+    
 
 
     return (
@@ -34,7 +29,6 @@ const Menu = () => {
                         <li onClick={() => setSelectedFoodType('dinner')} className="nav-item">
                             <span className={selectedFoodType === "dinner" ? "active nav-link" : "nav-link"}>Dinner</span>
                         </li>
-                        <h3>{cart.length}</h3>
                     </ul>
                 </div>
 
@@ -51,7 +45,8 @@ const Menu = () => {
                         selectedCategory.map(item =>
                             <FoodItem
                                 handleAddProduct={handleAddProduct}
-                                product={item}>
+                                product={item}
+                                key={item.id}>
                             </FoodItem>)
                     }
 
@@ -60,10 +55,12 @@ const Menu = () => {
 
 
 
-
             <div className="check-out">
-                <button type="button" className="btn btn-danger" disabled={cart.length < 1}>CheckOut Your Food</button>
+                <Link to='/CheckOutDetails'>
+                    <button type="button" className="btn btn-danger" disabled = {props.cart < 1}>Checkout Your Food</button>
+                </Link>
             </div>
+
         </div>
     );
 };

@@ -7,16 +7,18 @@ img{
     list-style: none;
     color: black;
     margin-right: 20px;
+    cursor:pointer;
 }
-.nav-item.login:hover{
-    text-decoration: none;
-    text-transform: uppercase;
-
-}
-
-.nav-item button{
+button{
     border-radius: 35px;
+    height: 40px !important;
 }
-.nav-item button:hover{
-    text-transform: uppercase;
+.nav-item button,p{
+    font-weight: 100;
+}
+.nav-item button,p:hover{
+    font-weight: 400;
+}
+.FontAwesomeIcon:hover{
+    color:blue;
 }

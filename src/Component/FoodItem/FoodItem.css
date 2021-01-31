@@ -5,4 +5,6 @@
 }
 .card:hover{
     box-shadow: 0px 0px 60px lightgray;
+    list-style: none;
+    text-decoration: none;
 }
